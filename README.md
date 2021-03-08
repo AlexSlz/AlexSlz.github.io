@@ -1,1 +1,1 @@
-www.antalgorithm.me
+antalgorithm.me
