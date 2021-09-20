@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alex</title>
+    <link rel="stylesheet" href="files/css/style.css" />
+    <script src="https://use.fontawesome.com/4b1a6d78bb.js"></script>
+  </head>
+  <body>
+    <div class="animation02">
+      <div></div>
+    </div>
+    <section>
+      <h1 id="text">Hello, I'm Alex S.</h1>
+    </section>
+    <a class="download" href="files/Резюме.docx">Download CV</a>
+    <div class="container">
+      <a>More details</a>
+      <br />
+      <i class="fa fa-lock">乁( ͡° ͜ʖ ͡°)ㄏ</i>
+    </div>
+    <script>
+      const text = document.getElementById('text')
+      text.innerHTML = text.textContent.replace(/\S/g, '<span>$&</span>')
+      const element = document.querySelectorAll('span')
+      for (let i = 0; i < element.length; i++) {
+        element[i].style.animationDelay = i * 0.07 + 's'
+      }
+    </script>
+  </body>
+</html>
