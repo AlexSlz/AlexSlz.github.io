@@ -12,7 +12,7 @@ body {
 #bg {
   filter: blur(1px);
   opacity: 0.04;
-  background-size: 10%;
+  background-size: 13%;
   height: 100%;
   width: 100%;
   position: fixed;

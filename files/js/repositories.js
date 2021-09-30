@@ -1,16 +1,24 @@
 const hideReposByName = ['AlexSlz.github.io']
 
-class Icon {
+class namedText {
   constructor(name, text) {
     this.name = name
     this.text = text
   }
 }
 
-var Icons = [
-  new Icon('Ant_Algorithm_Unity', 'fas fa-cog'),
-  new Icon('CaptScr', 'fas fa-file-image'),
-  new Icon('udp_client-server_parser', 'fas fa-server'),
+const Icons = [
+  new namedText('Ant_Algorithm_Unity', 'fas fa-cog'),
+  new namedText('CaptScr', 'fas fa-file-image'),
+  new namedText('udp_client-server_parser', 'fas fa-server'),
+]
+
+const Link = [
+  new namedText('FrogAndApple', 'https://alexslz.github.io/FrogAndApple/'),
+  new namedText(
+    'Ant_Algorithm_Unity',
+    'https://alexslz.github.io/Ant_Algorithm_Unity/'
+  ),
 ]
 
 var reposApp = new Vue({
@@ -41,7 +49,11 @@ var reposApp = new Vue({
                 element.icon = elem.text
               }
             }) //element.html_url + '/blob/master/icon.txt?raw=true'
-
+            Link.forEach((link) => {
+              if (link.name == element.name) {
+                element.link = link.text
+              }
+            })
             if (element.description == null) {
               element.description = 'Empty description :('
             }

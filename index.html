@@ -40,9 +40,14 @@
             {{ element.name }} [ <i v-bind:class="element.icon"></i> ]
           </h1>
           <h2 class="description">> {{element.description}}</h2>
+          <div class="link-list">
           <a class="link" v-bind:href="element.html_url">
-            <i class="fab fa-github"></i> GitHub project
+            <i class="fab fa-github"></i> GitHub project.
           </a>
+          <a v-if="element.link !== undefined" class="link" v-bind:href="element.link">
+            <i class="fas fa-paperclip"></i> Go Test.
+          </a>
+        </div>
         </article>
       </section>
     </div>
