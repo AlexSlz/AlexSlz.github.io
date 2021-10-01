@@ -11,6 +11,7 @@ const Icons = [
   new namedText('Ant_Algorithm_Unity', 'fas fa-cog'),
   new namedText('CaptScr', 'fas fa-file-image'),
   new namedText('udp_client-server_parser', 'fas fa-server'),
+  new namedText('FrogAndApple', 'fas fa-gamepad'),
 ]
 
 const Link = [
