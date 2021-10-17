@@ -12,8 +12,8 @@ const Icons = [
   new namedText('CaptScr', 'fas fa-file-image'),
   new namedText('udp_client-server_parser', 'fas fa-server'),
   new namedText('FrogAndApple', 'fas fa-gamepad'),
+  new namedText('snakeCplusplus', 'fas fa-gamepad'),
 ]
-
 const Link = [
   new namedText('FrogAndApple', 'https://alexslz.github.io/FrogAndApple/'),
   new namedText(
