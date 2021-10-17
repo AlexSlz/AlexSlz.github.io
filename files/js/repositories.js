@@ -16,12 +16,12 @@ const Icons = [
 ]
 const Link = [
   new namedText('FrogAndApple', 'https://alexslz.github.io/FrogAndApple/'),
+  new namedText('snakeCplusplus', 'https://github.com/AlexSlz/snakeCplusplus/raw/master/snakeGame.rar'),
   new namedText(
     'Ant_Algorithm_Unity',
     'https://alexslz.github.io/Ant_Algorithm_Unity/'
   ),
 ]
-
 var reposApp = new Vue({
   el: '#repositories',
   data: {
