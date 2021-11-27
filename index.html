@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alex</title>
+    <link rel="stylesheet" href="files/css/style.css" />
+    <link rel="stylesheet" href="files/css/animation.css" />
+
+  </head>
+  <body>
+    <img v-bind:style="renderImage" id="bg"></ш>
+
+    <div class="save">
+      <div></div>
+    </div>
+    <div id="loader1">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <section id="mainPage">
+      <div class="myDes">
+        <h1 id="text">Hello, I'm Alex S.</h1>
+      </div>
+    </section>
+
+    <section id="repositoriesPage" class="">
+      <h1 class="contact">My project:</h1>
+    <div id="repositories">
+      <section class="card-list">
+        <article
+          class="card"
+          v-bind:href="element.html_url"
+          v-for="element in allRepos"
+        >
+          <!--<img draggable="false" v-bind:src="element.icon" /> -->
+          <h1 class="name">
+            {{ element.name }} [ <i v-bind:class="element.icon"></i> ]
+          </h1>
+          <h2 class="description">> {{element.description}}</h2>
+          <div class="link-list">
+          <a class="link" v-bind:href="element.html_url">
+            <i class="fab fa-github"></i> GitHub project.
+          </a>
+          <a v-if="element.link !== undefined" class="link" v-bind:href="element.link">
+            <i class="fas fa-paperclip"></i> Watch.
+          </a>
+        </div>
+        </article>
+      </section>
+    </div>
+    <div id="levelApp">
+      <div class="levelInfo">
+        <h1 class="levelText">LVL {{level}}</h1>
+        <div class="expBar">
+          <span
+            v-if="exp"
+            class="exp expActive"
+            v-for="exp in experience"
+          ></span>
+          <span v-else class="exp"></span>
+        </div>
+      </div>
+      <p class="levelHelpText">
+        * need {{needExp - exp}} repositories for next level
+      </p>
+    </div>
+    <section class="contact">
+      <p>Contact with me:</p>
+      <a href="https://t.me/lexltr"><i class="fab fa-telegram"></i></a>
+      <a href="https://vk.com/alex.slznev"><i class="fab fa-vk"></i></a>
+    </section>
+  </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="files/js/index.js"></script>
+  <script src="files/js/level.js"></script>
+  <script src="files/js/repositories.js"></script>
+  <script src="files/js/render.js"></script>
+  <script
+    src="https://kit.fontawesome.com/84af5c4d23.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
