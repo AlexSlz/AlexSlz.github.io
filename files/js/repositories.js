@@ -13,7 +13,7 @@ const Icons = [
   new namedText('udp_client-server_parser', 'fas fa-server'),
   new namedText('FrogAndApple', 'fas fa-gamepad'),
   new namedText('snakeCplusplus', 'fas fa-gamepad'),
-  new namedText('pagers', 'fas fa-pager'),
+  new namedText('pager', 'fas fa-pager'),
   new namedText('ReplayAction', 'fas fa-camera'),
 ]
 
