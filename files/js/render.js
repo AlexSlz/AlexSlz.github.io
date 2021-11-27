@@ -13,7 +13,7 @@ function RenderPage(page) {
 var imageApp = new Vue({
   el: '#bg',
   data: {
-    imgCount: 36,
+    imgCount: 49,
     renderImage: '',
   },
   created: function () {

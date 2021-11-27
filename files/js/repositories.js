@@ -11,10 +11,18 @@ const Icons = [
   new namedText('Ant_Algorithm_Unity', 'fas fa-cog'),
   new namedText('CaptScr', 'fas fa-file-image'),
   new namedText('udp_client-server_parser', 'fas fa-server'),
+  new namedText('FrogAndApple', 'fas fa-gamepad'),
+  new namedText('snakeCplusplus', 'fas fa-gamepad'),
+  new namedText('pagers', 'fas fa-pager'),
+  new namedText('ReplayAction', 'fas fa-camera'),
 ]
 
 const Link = [
   new namedText('FrogAndApple', 'https://alexslz.github.io/FrogAndApple/'),
+  new namedText(
+    'snakeCplusplus',
+    'https://github.com/AlexSlz/snakeCplusplus/raw/master/snakeGame.rar'
+  ),
   new namedText(
     'Ant_Algorithm_Unity',
     'https://alexslz.github.io/Ant_Algorithm_Unity/'

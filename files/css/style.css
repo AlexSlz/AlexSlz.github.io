@@ -60,7 +60,7 @@ body {
 
 .levelHelpText {
   position: relative;
-  filter: blur(2px);
+  filter: blur(0.5vh);
   transition: 0.5s;
   top: -3vh;
 }
@@ -101,16 +101,18 @@ body {
   width: 50vh;
   min-width: 40vh;
   padding: 1.5rem;
-  font-size: 1.5vh;
+  font-size: 1.3vh;
   color: #a1a1a1;
 }
 .card {
-  border-radius: 16px;
+  border-radius: 2vh;
   background: #17141d;
   box-shadow: -1vh 0.5vh 1.5vh #000;
   transition: 0.2s;
 }
-
+.card .name {
+  font-size: 1.5vh;
+}
 .card:hover {
   color: white;
   transform: translateY(-1rem);
@@ -167,7 +169,7 @@ body {
 }
 .myDes #text {
   position: relative;
-  font-size: 5vh;
+  font-size: 3.8vh;
   letter-spacing: 2px;
 }
 .myDes #text span {
