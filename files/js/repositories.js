@@ -1,39 +1,45 @@
 const hideReposByName = ['AlexSlz.github.io']
 
-class namedText {
-  constructor(name, text) {
+class reposClass {
+  constructor(name, icon, ...args) {
     this.name = name
-    this.text = text
+    this.icon = icon
+    this.depend = args
   }
 }
 
-const Icons = [
-  new namedText('Ant_Algorithm_Unity', 'fas fa-cog'),
-  new namedText('CaptScr', 'fas fa-file-image'),
-  new namedText('udp_client-server_parser', 'fas fa-server'),
-  new namedText('FrogAndApple', 'fas fa-gamepad'),
-  new namedText('snakeCplusplus', 'fas fa-gamepad'),
-  new namedText('pager', 'fas fa-pager'),
-  new namedText('ReplayAction', 'fas fa-camera'),
+const reposAddons = [
+  new reposClass('Ant_Algorithm_Unity', 'fas fa-cog', {
+    name: 'Play',
+    icon: 'fas fa-gamepad',
+    link: 'https://alexslz.github.io/Ant_Algorithm_Unity/',
+  }),
+  new reposClass('CaptScr', 'fas fa-file-image'),
+  new reposClass('udp_client-server_parser', 'fas fa-server'),
+  new reposClass('FrogAndApple', 'fas fa-gamepad', {
+    name: 'Play',
+    icon: 'fas fa-gamepad',
+    link: 'https://alexslz.github.io/FrogAndApple/',
+  }),
+  new reposClass('snakeCplusplus', 'fas fa-gamepad', {
+    name: 'Download',
+    icon: 'fas fa-save',
+    link: 'https://github.com/AlexSlz/snakeCplusplus/raw/master/snakeGame.rar',
+  }),
+  new reposClass('pager', 'fas fa-pager'),
+  new reposClass('ReplayAction', 'fas fa-camera', {
+    name: 'Download',
+    icon: 'fas fa-save',
+    link: 'https://github.com/AlexSlz/ReplayAction/raw/master/ReplayAction.zip',
+  }),
+  new reposClass('TelegramSender', 'fab fa-telegram', {
+    name: 'Wath',
+    icon: 'fab fa-youtube',
+    link: 'https://www.youtube.com/watch?v=fH6qhINDE6E',
+  }),
 ]
-
-const Link = [
-  new namedText('FrogAndApple', 'https://alexslz.github.io/FrogAndApple/'),
-  new namedText(
-    'snakeCplusplus',
-    'https://github.com/AlexSlz/snakeCplusplus/raw/master/snakeGame.rar'
-  ),
-  new namedText(
-    'ReplayAction',
-    'https://github.com/AlexSlz/ReplayAction/raw/master/ReplayAction.zip'
-  ),
-  new namedText(
-    'Ant_Algorithm_Unity',
-    'https://alexslz.github.io/Ant_Algorithm_Unity/'
-  ),
-]
-
-var reposApp = new Vue({
+//www.youtube.com/watch?v=fH6qhINDE6E
+https: var reposApp = new Vue({
   el: '#repositories',
   data: {
     displayCountRepos: levelApp.needExp,
@@ -56,6 +62,16 @@ var reposApp = new Vue({
           })
           if (!isThere) {
             element.prop = 'icon'
+            element.prop = 'depend'
+            reposAddons.forEach((item) => {
+              if (item.name == element.name) {
+                element.icon = item.icon
+                if (item.depend !== undefined) {
+                  element.depend = item.depend
+                }
+              }
+            })
+            /*
             Icons.forEach((elem) => {
               if (elem.name == element.name) {
                 element.icon = elem.text
@@ -66,6 +82,7 @@ var reposApp = new Vue({
                 element.link = link.text
               }
             })
+            */
             if (element.description == null) {
               element.description = 'Empty description :('
             }

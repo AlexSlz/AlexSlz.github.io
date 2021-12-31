@@ -44,8 +44,8 @@
           <a class="link" v-bind:href="element.html_url">
             <i class="fab fa-github"></i> GitHub project.
           </a>
-          <a v-if="element.link !== undefined" class="link" v-bind:href="element.link">
-            <i class="fas fa-paperclip"></i> Watch.
+          <a v-for="item in element.depend" class="link" v-bind:href="item.link">
+            <i v-bind:class="item.icon"></i> {{item.name}}.
           </a>
         </div>
         </article>
@@ -72,6 +72,7 @@
       <a href="https://t.me/lexltr"><i class="fab fa-telegram"></i></a>
       <a href="https://vk.com/alex.slznev"><i class="fab fa-vk"></i></a>
     </section>
+    <br/>
   </section>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>

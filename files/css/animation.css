@@ -19,27 +19,27 @@
 }
 
 #loader1 div:nth-child(1) {
-  background-color: #d55959;
+  background-color: #e6cc59 /*#d55959*/;
   animation-delay: 0.5s;
 }
 
 #loader1 div:nth-child(2) {
-  background-color: #ffe08b;
+  background-color: #424242 /*#ffe08b*/;
   animation-delay: 0.4s;
 }
 
 #loader1 div:nth-child(3) {
-  background-color: #75cfb9;
+  background-color: #721e1e /*#75cfb9*/;
   animation-delay: 0.3s;
 }
 
 #loader1 div:nth-child(4) {
-  background-color: #f1a05b;
+  background-color: #54aa77 /*#f1a05b*/;
   animation-delay: 0.2s;
 }
 
 #loader1 div:nth-child(5) {
-  background-color: #78bee4;
+  background-color: #ff6f61 /*#78bee4*/;
   animation-delay: 0.1s;
 }
 
