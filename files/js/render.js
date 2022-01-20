@@ -1,7 +1,4 @@
-const pages = [
-  document.getElementById('mainPage'),
-  document.getElementById('repositoriesPage'),
-]
+const pages = [document.getElementById('mainPage'), document.getElementById('repositoriesPage')]
 
 function RenderPage(page) {
   if (page.className == 'hide') page.className = ''
@@ -13,7 +10,7 @@ function RenderPage(page) {
 var imageApp = new Vue({
   el: '#bg',
   data: {
-    imgCount: 69,
+    imgCount: 77,
     renderImage: '',
   },
   created: function () {

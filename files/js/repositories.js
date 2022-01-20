@@ -8,25 +8,44 @@ class reposClass {
   }
 }
 
+//https://youtu.be/A5krzOfA8YQ
+
 const reposAddons = [
   new reposClass('Ant_Algorithm_Unity', 'fas fa-cog', {
     name: 'Play',
-    icon: 'fas fa-gamepad',
+    icon: 'fas fa-flask',
     link: 'https://alexslz.github.io/Ant_Algorithm_Unity/',
   }),
-  new reposClass('CaptScr', 'fas fa-file-image'),
+  new reposClass('CaptScr', 'fas fa-file-image', {
+    name: 'Wath',
+    icon: 'fab fa-youtube',
+    link: 'https://youtu.be/A5krzOfA8YQ',
+  }),
   new reposClass('udp_client-server_parser', 'fas fa-server'),
   new reposClass('FrogAndApple', 'fas fa-gamepad', {
     name: 'Play',
     icon: 'fas fa-gamepad',
     link: 'https://alexslz.github.io/FrogAndApple/',
   }),
-  new reposClass('snakeCplusplus', 'fas fa-gamepad', {
-    name: 'Download',
-    icon: 'fas fa-save',
-    link: 'https://github.com/AlexSlz/snakeCplusplus/raw/master/snakeGame.rar',
+  new reposClass(
+    'snakeCplusplus',
+    'fas fa-gamepad',
+    {
+      name: 'Download',
+      icon: 'fas fa-save',
+      link: 'https://github.com/AlexSlz/snakeCplusplus/raw/master/snakeGame.rar',
+    },
+    {
+      name: 'Wath',
+      icon: 'fab fa-youtube',
+      link: 'https://youtu.be/mGne9jyiX9k',
+    }
+  ),
+  new reposClass('pager', 'fas fa-pager', {
+    name: 'Wath',
+    icon: 'fab fa-youtube',
+    link: 'https://youtu.be/j6IWT_rLotU',
   }),
-  new reposClass('pager', 'fas fa-pager'),
   new reposClass('ReplayAction', 'fas fa-camera', {
     name: 'Download',
     icon: 'fas fa-save',
@@ -35,10 +54,10 @@ const reposAddons = [
   new reposClass('TelegramSender', 'fab fa-telegram', {
     name: 'Wath',
     icon: 'fab fa-youtube',
-    link: 'https://www.youtube.com/watch?v=fH6qhINDE6E',
+    link: 'https://youtu.be/fH6qhINDE6E',
   }),
+  new reposClass('TikTokVideoDownloader', 'fab fa-tiktok'),
 ]
-//www.youtube.com/watch?v=fH6qhINDE6E
 https: var reposApp = new Vue({
   el: '#repositories',
   data: {
