@@ -12,14 +12,26 @@ var imageApp = new Vue({
   data: {
     imgCount: 77,
     renderImage: '',
+    interval: null,
   },
   created: function () {
     this.setImg(-1)
+    this.cycleImg(true, 15000)
   },
   methods: {
     setImg(yes) {
-      var randInt = yes <= -1 ? Math.floor(Math.random() * this.imgCount) : yes
+      var randInt = yes <= -1 ? Math.floor(Math.random() * (this.imgCount - 1)) + 1 : yes
       this.renderImage = 'background-image: url(files/img/' + randInt + '.jpg)'
+    },
+    cycleImg(yes, speed) {
+      if (yes) {
+        clearInterval(this.interval)
+        this.interval = setInterval(() => {
+          this.setImg(-1)
+        }, speed)
+      } else {
+        clearInterval(this.interval)
+      }
     },
   },
 })

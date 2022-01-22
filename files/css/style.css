@@ -11,7 +11,7 @@ body {
 
 #bg {
   filter: blur(1px);
-  opacity: 0.04;
+  opacity: 0.03;
   background-size: 13%;
   height: 100%;
   width: 100%;
@@ -20,6 +20,11 @@ body {
   background-position: 0px 0px;
 
   animation: animeBG 100s linear infinite alternate;
+  transition: background-image 7s ease-in-out;
+}
+
+#bg img.transparent {
+  opacity: 0;
 }
 
 @keyframes animeBG {
