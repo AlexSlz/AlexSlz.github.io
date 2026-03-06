@@ -1,0 +1,36 @@
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+.title h1 {
+  position: relative;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .title h1 {
+    font-size: 1.9rem;
+  }
+}
+
+h1 span {
+  position: relative;
+  display: inline-block;
+  animation: anime 2s ease-in-out infinite;
+}
+@keyframes anime {
+  0%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+  30% {
+    transform: translateY(-30px) scale(0.9, 1.2);
+  } /* Вытягивание вверх */
+  60% {
+    transform: translateY(5px) scale(1.05, 0.9);
+  } /* Приплюскивание при "приземлении" */
+}

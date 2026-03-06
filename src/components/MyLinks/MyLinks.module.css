@@ -1,0 +1,35 @@
+.card {
+  max-width: 28rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card p {
+  color: #d1d5db;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0.7rem 0;
+  font-size: 1rem;
+}
+
+.list i {
+  font-size: 1.2rem;
+}
+
+.list a {
+  color: #f9fafb;
+  text-decoration: none;
+}
